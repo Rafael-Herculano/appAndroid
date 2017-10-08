@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Rafael_herculano</string>
+
+    <string name="action_buscar">Rafael_herculano</string>
+
+    <string name="action_share">Rafael_herculano</string>
+
+    <string name="action_atualizar">Rafael_herculano</string>
+
+    <string name="action_adicionar">Rafael_herculano</string>
+
+    <string name="action_config">Rafael_herculano</string>
+
 </resources>
