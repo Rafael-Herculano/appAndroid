@@ -1,5 +1,16 @@
 package br.com.rafaelsousa.rafael_herculano;
 
+
+
+/*
+    INTEGRANTES
+        Rafael Herculano de Sousa
+        ------------
+    RA
+        1520293
+
+
+ */
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
