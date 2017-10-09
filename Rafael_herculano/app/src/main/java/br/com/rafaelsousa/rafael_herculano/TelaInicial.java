@@ -36,18 +36,24 @@ public class TelaInicial extends DebugActivity {
 
         share.setShareIntent(getDefautIntent());
 
+
+        searchView.setOnQueryTextListener(onSearch());
+
+
         return true;
     }
 
     private Intent getDefautIntent() {
-        // Intent ACTION_SEND. Qualquer app que responde essa intenção pode ser chamado
+
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/*");
-        String textoShare = "Minha Lista de cervejas! \n";
+        String textoShare = "Minha Lista de produtos! \n";
 
 
         intent.putExtra(Intent.EXTRA_TEXT, textoShare);
         return intent;
+
+
     }
 
 
@@ -88,6 +94,8 @@ public class TelaInicial extends DebugActivity {
             Toast.makeText(TelaInicial.this, "Buscar", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.action_adicionar) {
             Toast.makeText(TelaInicial.this, "Adicionar", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(TelaInicial.this, MainActivity.class);
+            startActivity(intent);
         } else if (id == R.id.action_config) {
             Toast.makeText(TelaInicial.this, "Configurações", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.action_share) {
