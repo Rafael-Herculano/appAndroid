@@ -22,11 +22,11 @@ public class MainActivity extends DebugActivity {
             public void onClick(View v) {
                 EditText campoUsuario = (EditText) findViewById(R.id.txtUsuario);
                 String textoUsuario = campoUsuario.getText().toString();
-                Toast.makeText(MainActivity.this, textoUsuario, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, TelaInicial.class);
-                startActivity(intent);
-            }
 
+                    Toast.makeText(MainActivity.this, "Seja bem vindo: " + textoUsuario, Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(MainActivity.this, TelaInicial.class);
+                    startActivity(intent);
+                }
 
 
 

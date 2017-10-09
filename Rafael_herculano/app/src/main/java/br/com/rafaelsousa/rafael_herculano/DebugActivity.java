@@ -13,9 +13,10 @@ public class DebugActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceStated){
+    protected void onCreate(Bundle savedInstanceStated) {
         super.onCreate(savedInstanceStated);
     }
+
     protected void onStart() {
         super.onStart();
         Log.i("APP", getClassName() + ".onStart() chamado");
@@ -23,7 +24,7 @@ public class DebugActivity extends AppCompatActivity {
 
     protected void onResume() {
         super.onResume();
-          Log.i("Rafael Herculano", getClassName() + " .onResume() chamado");
+        Log.i("Rafael Herculano", getClassName() + " .onResume() chamado");
 
     }
 
@@ -32,18 +33,19 @@ public class DebugActivity extends AppCompatActivity {
         Log.i("Rafael Herculano", getClassName() + " .onPause() chamado");
 
     }
+
     protected void onStop() {
         super.onStop();
         Log.i("Rafael Herculano", getClassName() + " .onStop() chamado");
 
     }
 
-    protected void onRestart(){
+    protected void onRestart() {
         super.onRestart();
         Log.i("Rafael Herculano", getClassName() + " .onRestart() chamado");
     }
 
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
         Log.i("Rafael Herculano", getClassName() + " .onDestroy() chamado");
     }
@@ -53,8 +55,6 @@ public class DebugActivity extends AppCompatActivity {
         String s = getClass().getName();
         return s.substring(s.lastIndexOf("."));
     }
-
-
 
 
 }
